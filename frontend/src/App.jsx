@@ -4,7 +4,7 @@ import Login from "./pages/Login.jsx";
 import Signup from "./pages/Signup.jsx"; 
 import Dashboard from "./pages/Dashboard.jsx";
 import CreateTicket from "./pages/CreateTicket.jsx";
-import "./index.css"
+// import "./index.css"
 
 
 class App extends Component {
