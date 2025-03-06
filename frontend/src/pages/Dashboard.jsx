@@ -19,7 +19,7 @@ class Dashboard extends Component {
 
   fetchTickets = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/tickets", {
+      const res = await axios.get("https://role-based-ticketing-system-l5o7.onrender.com/api/tickets", {
         headers: {
           Authorization: `Bearer ${this.props.token ? this.props.token.trim() : ""}`,
           "Content-Type": "application/json",
@@ -46,7 +46,7 @@ class Dashboard extends Component {
     try {
       const { newStatus } = this.state;
       await axios.put(
-        `http://localhost:5000/api/tickets/${ticketId}`,
+        `https://role-based-ticketing-system-l5o7.onrender.com/api/tickets/${ticketId}`,
         { status: newStatus },
         {
           headers: {

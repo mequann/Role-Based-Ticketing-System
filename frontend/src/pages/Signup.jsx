@@ -16,7 +16,7 @@ class Signup extends Component {
 
     try {
       // Send signup request to the backend
-      const res = await axios.post("http://localhost:5000/api/auth/signup", {
+      const res = await axios.post("https://role-based-ticketing-system-l5o7.onrender.com/api/auth/signup", {
         username,
         password,
         role,

@@ -16,7 +16,7 @@ class CreateTicket extends Component {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/tickets",
+        "https://role-based-ticketing-system-l5o7.onrender.com/api/tickets",
         { title, description },
         {
           headers: {
